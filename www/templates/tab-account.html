@@ -1,0 +1,11 @@
+<ion-view ng-controller="AccountCtrl" view-title="">
+    <ion-content>
+        
+        <ion-list>
+            <ion-item ng-repeat="item in GraphList" ng-click="report1(item)">
+                <h2 class="white-space-normal">{{item.GraphName}}</h2>
+            </ion-item>
+        </ion-list>
+      
+    </ion-content>
+</ion-view>

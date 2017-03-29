@@ -1,0 +1,105 @@
+
+<ion-view ng-controller="MySellertabCtrl" view-title="">
+    <ion-content>
+        <div class="list">
+            <a class="item item-input item-stacked-label" ng-click="showConfirm()" ng-repeat="chat in chats">
+                <h2>{{chat.name}}</h2>
+                <p>{{chat.lastText}}</p>
+                </a>
+
+                <!--<a class="item item-input item-stacked-label" ng-click="showConfirm()">   Changes and implemented ngrepeat
+                    <h2>Aditya</h2>
+
+                    <p>Tomato, Potato Off Grade, Cabbage</p>
+                </a>
+                <a class="item item-input item-stacked-label" ng-click="showConfirm()">
+                    <h2>Raghu</h2>
+
+                    <p> Potato, Cabbage</p>
+                </a>
+                <a class="item item-input item-stacked-label" ng-click="showConfirm()">
+                    <h2>Shubham</h2>
+
+                    <p>Cabbage Off Grade,Tomato, Potato, </p>
+                </a>
+                <a class="item item-input item-stacked-label" ng-click="showConfirm()">
+                    <span class="input-label">Aditya</span>
+                    <br />
+                    <p>Tomato</p>
+                </a>
+                <a class="item item-input item-stacked-label" ng-click="showConfirm()">
+                    <span class="input-label">Raghu</span>
+                    <br />
+                    <p> Potato, Cabbage Offgade</p>
+                </a>
+                <a class="item item-input item-stacked-label" ng-click="showConfirm()">
+                    <span class="input-label">Shubham</span>
+                    <br />
+                    <p>Cabbage,Tomato Off Grade, Potato, </p>
+                </a>
+                <a class="item item-input item-stacked-label" ng-click="showConfirm()">
+                    <span class="input-label">Aditya</span>
+                    <br />
+                    <p>Tomato, Potato, Cabbage</p>
+                </a>
+                <a class="item item-input item-stacked-label" ng-click="showConfirm()">
+                    <span class="input-label">Raghu</span>
+                    <br />
+                    <p> Potato OffGrade, Cabbage OffGrade</p>
+                </a>
+                <a class="item item-input item-stacked-label" ng-click="showConfirm()">
+                    <span class="input-label">Shubham</span>
+                    <br />
+                    <p>Cabbage,Tomato, Potato OffGrade </p>
+                </a>
+
+                <a class="item item-input item-stacked-label" ng-click="showConfirm()">
+                    <span class="input-label">Shubham</span>
+                    <br />
+                    <p>Cabbage,Tomato, Potato, </p>
+                </a><a class="item item-input item-stacked-label" ng-click="showConfirm()">
+                    <span class="input-label">Karan</span>
+                    <br />
+                    <p>Cabbage,Tomato, Potato, </p>
+                </a><a class="item item-input item-stacked-label" ng-click="showConfirm()">
+                    <span class="input-label">Malhotra</span>
+                    <br />
+                    <p>Cabbage,Tomato, Potato, </p>
+                </a><a class="item item-input item-stacked-label" ng-click="showConfirm()">
+                    <span class="input-label">Khan</span>
+                    <br />
+                    <p>Cabbage,Tomato, Potato, </p>
+                </a>-->
+
+
+</div>
+
+
+
+
+    </ion-content>
+
+
+</ion-view>
+
+<style>
+    /*.list {
+        margin-top: 43px;
+    }*/
+
+        .list .item.item-accordion {
+            line-height: 38px;
+            padding-top: 0;
+            padding-bottom: 0;
+            transition: 0.09s all linear;
+        }
+
+            .list .item.item-accordion.ng-hide {
+                line-height: 0px;
+            }
+
+            .list .item.item-accordion.ng-hide-add,
+            .list .item.item-accordion.ng-hide-remove {
+                display: block !important;
+            }
+</style>

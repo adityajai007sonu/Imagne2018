@@ -1,0 +1,76 @@
+<ion-view ng-controller="mySellers">
+    <ion-content>
+        <!--<ion-list>
+            <div ng-repeat="group in groups">
+                <ion-item class="item-stable"
+                          ng-click="toggleGroup(group)"
+                          ng-class="{active: isGroupShown(group)}">
+                    <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+                    &nbsp;
+                    Farmer Leader {{group.name}}
+                </ion-item>
+                <ion-item class="item-accordion"
+                          ng-repeat="item in group.items"
+                          ng-show="isGroupShown(group)">
+                    {{item}}
+                </ion-item>
+            </div>
+        </ion-list>-->
+
+        <ion-list>
+            <div class="padder-h-sm">
+                <button class="button button-block button-positive" ng-click="contacts()">
+                    Select contacts
+                </button>
+                <form class="border padding">
+                    <label floating>Message</label>
+                    <textarea class="w-100" placeholder="Enter message here..."></textarea>
+                </form>
+
+                <button class="button button-clear button-positive m-b-sm w-100">
+                    Send message to 8 contacts
+                </button>
+            </div>
+            <div ng-repeat="member in members">
+                <ion-item class="item-stable"
+                          ng-click="toggleGroup(member)"
+                          ng-class="{active: isGroupShown(member)}">
+                    <i class="icon" ng-class="isGroupShown(member) ? 'ion-minus' : 'ion-plus'"></i>
+                    &nbsp;
+                    {{member.Leader}}
+                    <span class="pull-right min-w-35 button button-clear button-positive l-h-none min-h-20 padder-h-none"><i class="ion ion-arrow-swap"></i></span>
+                    <span class="pull-right min-w-35 button button-clear button-positive l-h-none min-h-20 padder-h-none"><i class="ion ion-android-call"></i></span>
+                </ion-item>
+                <ion-item class="item-accordion padder-v-md padder-h-sm"
+                          ng-repeat="groupmember in member.GroupMember"
+                          ng-show="isGroupShown(member)">
+                    <h2 class="">{{groupmember.Name}} <span class="pull-right min-w-35 button button-clear button-positive l-h-none min-h-20 padder-h-none"><i class="ion ion-ios-undo"></i></span></h2>
+
+                    <p class="white-space-normal l-h-1">{{groupmember.msg}}</p>
+                    <p class="white-space-normal l-h-1">{{groupmember.msg}}</p>
+                </ion-item>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>
+
+<style>
+    /*.list{
+        margin-top:43px;
+    }*/
+    .list .item.item-accordion {
+        line-height: 38px;
+        padding-top: 0;
+        padding-bottom: 0;
+        transition: 0.09s all linear;
+    }
+
+        .list .item.item-accordion.ng-hide {
+            line-height: 0px;
+        }
+
+        .list .item.item-accordion.ng-hide-add,
+        .list .item.item-accordion.ng-hide-remove {
+            display: block !important;
+        }
+</style>

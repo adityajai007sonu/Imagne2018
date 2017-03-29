@@ -1,0 +1,19 @@
+<ion-view view-title="{{GraphName}}" ng-controller="ReportsperPageCtrl">
+    <ion-nav-buttons side="left">
+        <button class="button button-clear text-center text-lg" ng-click="myGoBack()">
+            <i class="ion-chevron-left font-md"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+
+        <div class="item item-button-right">
+            <h2>{{GraphName}}</h2>
+        </div>
+
+        <div class="card">
+            <div class="item item-image">
+                <img ng-src="{{GraphImage}}" />
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

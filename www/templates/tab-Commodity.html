@@ -1,0 +1,22 @@
+<ion-view ng-controller="ProductCtrl" view-title="">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" ng-click="multicheck(chat)" on-hold="onHold()">
+                <img ng-src="img/{{chat.Image1}}">
+                <h2>{{chat.name}}</h2>
+                <div class="item-text-wrap">
+                    <h4>{{chat.lastText}}</h4>
+                    <i class="icon ion-checkmark icon-accessory" ng-if="chat.isChecked"></i>
+                    <p>
+                        Today: {{chat.today}} Pound ,
+                        Tomorrow: {{chat.tomorrow}} Pound,
+                        Week: {{chat.week}} Pound
+                    </p>
+                </div>
+                <span class="badge badge-assertive">{{chat.notification}}</span>
+                <br />
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
+

@@ -1,0 +1,36 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.convexium.TansaSC"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.convexium.TansaSC"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.convexium.TansaSC"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.convexium.TansaSC"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.convexium.TansaSC"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.convexium.TansaSC"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "com.convexium.TansaSC"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.convexium.TansaSC"
+        }
+    },
+    "dependent_plugins": {}
+}
